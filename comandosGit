@@ -1,0 +1,41 @@
+Lista de comandos do git
+
+git add -> Deixa o arquivo visível para o git
+
+git status -> Verifica se existe algum arquivo para ser atualizado/commitado
+
+git commit - m -> Atualiza o repositório local e (-m) adiciona um comentário
+
+git log -> Lista todos os processos realizados no repositório.
+
+git diff -> Mostra a diferença feitas em um documento
+
+git checkout -> Desfaz as modificações do arquivo
+
+git reset HEAD [NOME_ARQUIVO] -> Retira o arquivo da "lista de commits" o que nos permite fazer novas alterações.
+
+git reset:
+
+
+			--soft -> Desfaz o commit  deixando o arquivo pronto para um próximo commit (stage)
+
+					(Escolha o commit anterior ao que deseja alterar)
+
+
+			--mixed -> Desfaz o commit deixando o arquivo em modo unstage
+
+
+					(Escolha o commit anterior ao que deseja alterar)
+
+
+			--hard -> Mata todas as modificações feitas no arquivo
+
+
+					(Escolha o commit anterior ao que deseja alterar)
+
+
+git remote add [NOME_REPOSITORIO_DESTINO] [ENDEREÇO_SSH] : Liga repositório local ao remote (GitHub/GitLab)
+
+git push -u [NOME_REPOSITORIO_DESTINO] [NOME_BRANCH_ORIGEM] : Da Push no repositório local
+
+##### -u : Guarda as informações dos repositórios de destino/origem
